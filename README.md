@@ -12,6 +12,3 @@ Items left to do:
 2. Create an additiona Entity with relation to Client Name data so that session data can be accurately stored.
 3. Add additional text boxes for more information such as current weight, date, and various notes about the session such as workouts completed.
 
-
-![Main Screen](‎⁨iCloud Drive⁩ ▸ ⁨Desktop⁩ ▸ ⁨School Work⁩ ▸ ⁨PersonalTraining⁩)
-Screen Shot 2019-05-14 at 5.11.22 PM
