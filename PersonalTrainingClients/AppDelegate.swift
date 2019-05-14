@@ -17,6 +17,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let managedContext = persistentContainer.viewContext
+        let navController = window!.rootViewController as! UINavigationController
+        let viewControllers = navController.viewControllers
+        
+        for controller in viewControllers {
+            if let controller = controller as? ClientDataViewController {
+                controller.managedContext = managedContext
+            }
+            
+            if let controller = controller as? ClientNameViewController {
+                controller.managedContext = managedContext
+            }
+            
+            if let controller = controller as? ClientTableViewController {
+                controller.managedContext = managedContext
+            }
+        }
         return true
     }
 
